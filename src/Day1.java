@@ -5,6 +5,7 @@ public class Day1 {
 	static int floor = 0;
 
 	public static void main(String[] args) {
+		boolean hasFoundBasement = false;
 		for (int i = 0; i < input.length(); i++) {
 			Character str = input.charAt(i);
 			if (str == "(".charAt(0)) {
@@ -12,7 +13,11 @@ public class Day1 {
 			} else if (str == ")".charAt(0)) {
 				floor--;
 			}
+			if(floor == -1 && !hasFoundBasement){
+				System.out.println("Part two answer " + i + 1);
+				hasFoundBasement = true;
+			}
 		}
-		System.out.println(floor);
+		System.out.println("Part one answer " + floor);
 	}
 }
