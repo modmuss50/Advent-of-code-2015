@@ -30,13 +30,7 @@ public class Day3 {
 				homes[x][y].presents++;
 			}
 		}
-		int twoMore = 0;
-		for (House house : houseList) {
-			if (house.presents >= 1) {
-				twoMore++;
-			}
-		}
-		System.out.println(twoMore + 1);
+		System.out.println(houseList.size() + 1);
 	}
 
 
