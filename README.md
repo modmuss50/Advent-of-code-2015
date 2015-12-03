@@ -1,2 +1,2 @@
 # Advent-of-code-2015
-My prorgams for http://adventofcode.com/
+My programs for http://adventofcode.com/
